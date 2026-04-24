@@ -1,59 +1,43 @@
-# MiniScholae
+# MiniScholae Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+MiniScholae es una aplicación web tipo SPA desarrollada en Angular para simular un sistema de asignación de cursos. Permite visualizar cursos disponibles, consultar detalles, inscribirse, validar cupos y administrar los cursos asignados.
 
-## Development server
+## Demo
 
-To start a local development server, run:
+Pendiente de despliegue en Netlify.
 
-```bash
-ng serve
-```
+## Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Listado de cursos disponibles
+- Vista de detalle por curso
+- Validación de cupos disponibles
+- Prevención de inscripciones duplicadas
+- Vista de cursos asignados
+- Cancelación de inscripción
+- Feedback visual al usuario
+- Navegación SPA con Angular Router
+- Uso de servicios para manejar el estado de inscripción
 
-## Code scaffolding
+## Tecnologías utilizadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Angular
+- TypeScript
+- Bootstrap
+- Font Awesome
+- GitHub
+- Netlify
 
-```bash
-ng generate component component-name
-```
+## Decisiones técnicas
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Se utilizó Angular Router para la navegación entre vistas.
+- Se implementó un servicio para manejar las inscripciones.
+- Se validó que un curso lleno no permita nuevas inscripciones.
+- Se evitó la duplicación de cursos inscritos.
+- Se usaron assets locales para representar visualmente cada curso.
+- Se configuró la aplicación como SPA para despliegue estático en Netlify.
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Instalación local
 
 ```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+npm install
+npm start
