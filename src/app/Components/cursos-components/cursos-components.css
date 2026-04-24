@@ -1,0 +1,91 @@
+.courses-page {
+  padding: 32px 0;
+}
+
+.page-header {
+  margin-bottom: 22px;
+}
+
+.page-header h2 {
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 4px;
+}
+
+.page-header p {
+  color: #6c757d;
+  margin: 0;
+}
+
+.card-custom {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.table-custom thead th {
+  background: #f8f9fb;
+  color: #495057;
+  font-weight: 700;
+  border-bottom: 1px solid #e9ecef;
+  padding: 16px;
+}
+
+.table-custom tbody td {
+  padding: 16px;
+  color: #495057;
+  vertical-align: middle;
+}
+
+.course-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #2d2d2d;
+}
+
+.course-name i {
+  color: #145388;
+  font-size: 20px;
+}
+
+.badge-level {
+  background: #edf7ff;
+  color: #145388;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.description-cell {
+  max-width: 280px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border-radius: 8px;
+}
+.custom-alert {
+  border-radius: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.custom-alert i {
+  font-size: 18px;
+}
+
+.btn i {
+  margin-right: 6px;
+}

@@ -1,0 +1,55 @@
+.navbar-scholae {
+  background: #ffffff;
+  border-bottom: 1px solid #edf0f2;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  padding: 14px 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #145388;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-brand i {
+  font-size: 24px;
+}
+
+.nav-link {
+  color: #495057;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 6px;
+  border-radius: 8px;
+  padding: 8px 14px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: #edf7ff;
+  color: #145388;
+}
+
+.courses-counter {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #e5e7eb;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.courses-counter span {
+  background: #145388;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 13px;
+}

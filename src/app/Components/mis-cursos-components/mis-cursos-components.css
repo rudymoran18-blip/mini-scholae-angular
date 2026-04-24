@@ -1,0 +1,159 @@
+.my-courses-page {
+  padding: 32px 0;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 4px;
+}
+
+.page-header p {
+  color: #6c757d;
+  margin: 0;
+}
+
+.counter-badge {
+  background: #edf7ff;
+  color: #145388;
+  padding: 9px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.course-card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.09);
+}
+
+.course-card .card-body {
+  padding: 24px;
+}
+
+.course-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #edf7ff;
+  color: #145388;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.course-icon i {
+  font-size: 24px;
+}
+
+.badge-level {
+  background: #f8f9fa;
+  color: #145388;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.course-card h5 {
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  color: #6c757d;
+  line-height: 1.5;
+  min-height: 72px;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.empty-state {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 48px 24px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.empty-state i {
+  font-size: 72px;
+  color: #145388;
+  margin-bottom: 18px;
+}
+
+.empty-state h4 {
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.empty-state p {
+  color: #6c757d;
+}
+.empty-state {
+  background: #ffffff;
+  border: 1px solid #edf0f2;
+  border-radius: 18px;
+  padding: 48px 24px;
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.empty-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 18px;
+  border-radius: 22px;
+  background: #edf7ff;
+  color: #145388;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-icon i {
+  font-size: 34px;
+}
+
+.empty-state h4 {
+  font-weight: 700;
+  color: #2d2d2d;
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  color: #6c757d;
+  max-width: 420px;
+  margin: 0 auto 22px;
+  line-height: 1.5;
+}
+
+.empty-state .btn {
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 600;
+}

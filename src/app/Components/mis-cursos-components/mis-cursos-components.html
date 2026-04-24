@@ -1,0 +1,60 @@
+<section class="my-courses-page">
+  <div class="container">
+    <div class="page-header">
+      <div>
+        <h2>Mis cursos asignados</h2>
+        <p>Consulta y administra tus cursos inscritos para este semestre.</p>
+      </div>
+
+      <span class="counter-badge">
+        <i class="simple-icon-check"></i>
+        {{ cantidadInscripciones }} inscritos
+      </span>
+    </div>
+
+    <div
+      *ngIf="cursosInscritos.length > 0; else noInscritos"
+      class="row row-cols-1 row-cols-md-3 g-4"
+    >
+      <div class="col" *ngFor="let c of cursosInscritos; let i = index">
+        <div class="card course-card h-100">
+          <div class="card-body">
+            <div class="course-icon">
+              <i class="iconsminds-books"></i>
+            </div>
+            <span class="badge-level">{{ c.nivel }}</span>
+            <h5>{{ c.nombre }}</h5>
+            <p>{{ c.descripcion }}</p>
+            <button
+              type="button"
+              class="btn btn-outline-danger btn-sm"
+              (click)="cancelar(i)"
+            >
+              <i class="fas fa-trash"></i>
+              Cancelar inscripción
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<ng-template #noInscritos>
+  <div class="empty-state">
+    <div class="empty-icon">
+      <i class="fas fa-book-open"></i>
+    </div>
+
+    <h4>Aún no tienes cursos asignados</h4>
+
+    <p>
+      Explora los cursos disponibles del semestre y selecciona los que deseas recibir.
+    </p>
+
+    <a routerLink="/cursos" class="btn btn-primary">
+      <i class="fas fa-plus-circle"></i>
+      Asignarme cursos
+    </a>
+  </div>
+</ng-template>
+  </div>
+</section>

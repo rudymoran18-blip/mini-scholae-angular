@@ -1,0 +1,47 @@
+<section class="course-detail-page">
+  <div class="container">
+    <div class="card detail-card" *ngIf="curso">
+      <div class="row g-0 align-items-stretch">
+
+        <div class="col-md-5 detail-image-box">
+          <img [src]="curso.imagen" [alt]="curso.nombre" />
+        </div>
+
+        <div class="col-md-7">
+          <div class="card-body detail-body">
+            <span class="badge-level">{{ curso.nivel }}</span>
+
+            <h2>{{ curso.nombre }}</h2>
+
+            <p class="description">
+              {{ curso.descripcion }}
+            </p>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span>Cupo</span>
+                <strong>{{ curso.cupo }}</strong>
+              </div>
+
+              <div class="stat-item">
+                <span>Inscritos</span>
+                <strong>{{ curso.inscritos }}</strong>
+              </div>
+
+              <div class="stat-item">
+                <span>Disponibles</span>
+                <strong>{{ curso.cupo - curso.inscritos }}</strong>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-primary" (click)="regresar()">
+              <i class="fas fa-arrow-left"></i>
+              Regresar a cursos
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
