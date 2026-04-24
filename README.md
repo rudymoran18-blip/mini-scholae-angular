@@ -4,7 +4,7 @@ MiniScholae es una aplicación web tipo SPA desarrollada en Angular para simular
 
 ## Demo
 
-Pendiente de despliegue en Netlify.
+https://mini-scholae-courses.netlify.app/ 
 
 ## Funcionalidades
 
